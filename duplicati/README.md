@@ -30,3 +30,5 @@ Container speedtest started...
 Script stopped: Wed Jun 28 06:38:27 PM CAT 2023
 ===>>>
 ```
+
+Disclaimer: This is my first bash script, use at own risk.
