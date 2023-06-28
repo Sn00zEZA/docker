@@ -1,6 +1,6 @@
 # Duplicati Docker Backup bash script
 
-A single script intended for use with Duplicati that uses the Job Name "DUPLICATI__backup_name" to look for a single docker container name and stop the container during the BEFORE event "DUPLICATI__EVENTNAME" and then allow duplicati to run the backup. Once backup is completed during the AFTER event "DUPLICATI__EVENTNAME" will then start the same container.
+A single script intended for use with Duplicati that uses the Job Name "DUPLICATI__backup_name" to look for a single docker container name and stop the container during the BEFORE event "DUPLICATI__EVENTNAME" and then allow duplicati to run the backup. Once backup is completed, during the AFTER event "DUPLICATI__EVENTNAME", it will then start the same container.
 
 The script also checks the Operation event "DUPLICATI__OPERATIONNAME" to only run during the BACKUP event. (RESTORE event could be added, but for now keeping this manuel).
 
