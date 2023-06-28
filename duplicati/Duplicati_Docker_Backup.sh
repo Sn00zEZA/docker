@@ -37,9 +37,9 @@ if [ $dupopevent == "Backup" ]; then
             printf "Container ${runcont} running state: ${docstate}\n" | tee -a $logfile
     
             if [ $docstate == "false" ]; then
-            printf "Container ${runcont} stopped...\n" | tee -a $logfile
+                printf "Container ${runcont} stopped...\n" | tee -a $logfile
             else
-            printf "Container ${runcont} still running, should be stopped!!!\n" | tee -a $logfile
+                printf "Container ${runcont} still running, should be stopped!!!\n" | tee -a $logfile
             fi
     
         else
@@ -61,9 +61,9 @@ if [ $dupopevent == "Backup" ]; then
             printf "Container ${runcont} running state: ${docstate}\n" | tee -a $logfile
     
             if [ "$docstate" == "true" ]; then
-            printf "Container ${runcont} started...\n" | tee -a $logfile
+                printf "Container ${runcont} started...\n" | tee -a $logfile
             else
-            printf "Container ${runcont} still not running, should be started!!!\n" | tee -a $logfile
+                printf "Container ${runcont} still not running, should be started!!!\n" | tee -a $logfile
             fi
         else
             printf "No container found named: ${dupdocker}\n" | tee -a $logfile
