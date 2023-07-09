@@ -5,6 +5,8 @@ A single script intended for use with Duplicati that uses the Job Name "DUPLICAT
 The script also checks the Operation event "DUPLICATI__OPERATIONNAME" to only run during the BACKUP event. (RESTORE event could be added, but for now keeping this manuel).
 
 Logging is done to the Duplicati docker container in the "/config" location which should be mapped too your duplicati data folder.
+UPDATE:
+Script now also logs to Duplicati docker log via stdout.
 
 ```
 <<<=== Backup
